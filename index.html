@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colorful Magic Page ✨</title>
+  <style>
+    /* --- RESET --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      overflow: hidden;
+      background: linear-gradient(-45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+      animation: fadeIn 2s ease;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      opacity: 0.9;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      background: linear-gradient(45deg, #ff9ff3, #feca57);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+      background: linear-gradient(45deg, #48dbfb, #1dd1a1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Colorful Zone 🌈</h1>
+  <p>Relax, explore, and enjoy some vibrant vibes!</p>
+
+  <div class="buttons">
+    <button class
